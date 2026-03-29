@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 from app.config import settings
 
@@ -206,44 +206,7 @@ def detect_indicators(question: str) -> List[str]:
     return matched
 
 
-def _parse_year_range(question: str) -> Tuple[Optional[int], Optional[int]]:
-    """Extract (start_year, end_year) constraints from a natural-language question.
 
-    Examples handled:
-      "till 2015"  / "until 2015"  / "up to 2015"  / "before 2016"  → end=2015
-      "from 2000"  / "since 2000"  / "after 1999"                   → start=2000
-      "from 2000 to 2015"  / "between 2000 and 2015"                → start=2000, end=2015
-      "last 5 years"  / "past 10 years"                             → start=current-N, end=current
-    """
-    import datetime
-    q = question.lower()
-    current_year = datetime.date.today().year
-
-    start: Optional[int] = None
-    end: Optional[int] = None
-
-    # "last N years" / "past N years"
-    m = re.search(r"\b(?:last|past)\s+(\d+)\s+years?\b", q)
-    if m:
-        n = int(m.group(1))
-        return current_year - n, current_year
-
-    # "from YYYY to YYYY" / "between YYYY and YYYY"
-    m = re.search(r"\b(?:from|between)\s+(\d{4})\s+(?:to|and|until|till)\s+(\d{4})\b", q)
-    if m:
-        return int(m.group(1)), int(m.group(2))
-
-    # "since YYYY" / "from YYYY" / "after YYYY"
-    m = re.search(r"\b(?:since|from|after)\s+(\d{4})\b", q)
-    if m:
-        start = int(m.group(1))
-
-    # "till YYYY" / "until YYYY" / "up to YYYY" / "before YYYY" / "upto YYYY"
-    m = re.search(r"\b(?:till|until|up\s*to|before|through)\s+(\d{4})\b", q)
-    if m:
-        end = int(m.group(1))
-
-    return start, end
 
 
 def fetch_indicator(key: str) -> Tuple[Dict[str, str], List[Dict[str, Any]]]:
@@ -271,35 +234,20 @@ def fetch_indicator(key: str) -> Tuple[Dict[str, str], List[Dict[str, Any]]]:
     return info, data_points
 
 
-def build_worldbank_context(indicator_keys: List[str], question: str = "") -> Tuple[str, Optional[Dict]]:
-    """Fetch data for requested indicators and return (text_context, chart_data_or_None).
+def build_worldbank_context(indicator_keys: List[str]) -> str:
+    """Fetch data for requested indicators and return a text context string.
 
-    If *question* is provided, year-range constraints in the question (e.g. "till 2015",
-    "from 2000 to 2010", "last 5 years") are applied to filter the data points.
+    All available data points are included so the LLM can decide which
+    years/points to use for the answer and optional chart.
     """
     if not indicator_keys:
-        return "", None
-
-    # Parse optional year-range from the question
-    start_year, end_year = _parse_year_range(question) if question else (None, None)
+        return ""
 
     text_parts: List[str] = []
-    chart_series: List[Dict] = []
 
     for key in indicator_keys:
         info, points = fetch_indicator(key)
 
-        # Apply year filter if requested
-        if start_year is not None:
-            points = [p for p in points if int(p["label"]) >= start_year]
-        if end_year is not None:
-            points = [p for p in points if int(p["label"]) <= end_year]
-
-        # If no explicit range, default to last 20 years
-        if start_year is None and end_year is None:
-            points = points[-20:]
-
-        # Build rich metadata block from all available fields
         meta_lines = [
             f"## {info['label']} (Code: {info['code']})",
             f"Topic: {info.get('topic', 'N/A')} | Unit: {info.get('unit', 'N/A')} | Periodicity: {info.get('periodicity', 'Annual')}",
@@ -318,28 +266,11 @@ def build_worldbank_context(indicator_keys: List[str], question: str = "") -> Tu
         meta_header = "\n".join(meta_lines)
 
         if not points:
-            text_parts.append(f"{meta_header}\nData: No data available for the requested range.")
+            text_parts.append(f"{meta_header}\nData: No data available.")
             continue
 
         rows = [f"  {p['label']}: {p['value']}" for p in points]
         range_label = f"{points[0]['label']}–{points[-1]['label']}"
-        text_parts.append(f"{meta_header}\nData ({range_label}):\n" + "\n".join(rows))
+        text_parts.append(f"{meta_header}\nAll data ({range_label}, {len(rows)} points):\n" + "\n".join(rows))
 
-        chart_series.append({
-            "name": info["label"],
-            "data_points": points,
-        })
-
-    text_context = "\n\n".join(text_parts)
-
-    chart_data = None
-    if chart_series:
-        chart_data = {
-            "title": " & ".join(INDICATORS[k]["label"] for k in indicator_keys),
-            "x_label": "Year",
-            "y_label": "Value",
-            "type": "line",
-            "series": chart_series,
-        }
-
-    return text_context, chart_data
+    return "\n\n".join(text_parts)

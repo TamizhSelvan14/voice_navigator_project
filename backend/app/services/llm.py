@@ -60,7 +60,19 @@ class LlmService:
             "    ## Important Note\n"
             "13. Do not mention the prompt, context format, or internal reasoning.\n"
             "14. Do not invent citations.\n"
-            "15. A chart/graph may be shown to the user alongside your answer. If the user's question does NOT ask for a graph, chart, or visual AND the data would not meaningfully benefit from one, output the exact token [NO_CHART] on the very last line of your response. If a chart IS appropriate or explicitly requested, do NOT include [NO_CHART].\n\n"
+            "15. CHART RULES — You have full control over whether a chart is shown and what data it contains:\n"
+            "    - If the user asks for a chart/graph/visual, OR the answer significantly benefits from one, include a chart block.\n"
+            "    - If a chart is NOT useful, do NOT include one.\n"
+            "    - To include a chart, output a fenced JSON block at the very end of your response like this:\n"
+            '    ```chart\n'
+            '    {"title": "...", "type": "line", "x_label": "Year", "y_label": "...", "series": [{"name": "...", "data_points": [{"label": "2010", "value": 3.2}, ...]}]}\n'
+            '    ```\n'
+            "    - type can be: line, pie, or bar.\n"
+            "    - YOU choose which data points to include based on the user's question (date range, sampling, etc).\n"
+            "    - For 'till 2015' only include points up to 2015. For 'last 5 years' only include the last 5.\n"
+            "    - If comparing multiple indicators, include multiple series.\n"
+            "    - Keep data_points reasonable (10–25 points per series is ideal for mobile).\n"
+            "    - The chart JSON must be valid JSON. Do not add comments inside it.\n\n"
             f"Mode: {mode}\n\n"
             f"Question: {question}\n\n"
             f"Context:\n{context}\n\n"
@@ -89,7 +101,7 @@ class LlmService:
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3,
             top_p=0.9,
-            max_tokens=1024,
+            max_tokens=2048,
             extra_body={"chat_template_kwargs":{"enable_thinking":False}},
         )
         text = response.choices[0].message.content or ""

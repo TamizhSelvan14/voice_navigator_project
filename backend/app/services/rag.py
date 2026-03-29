@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+import re
 from typing import Dict, List, Optional, Tuple
 
 from app.config import settings
@@ -8,6 +10,27 @@ from app.services.llm import LlmService
 from app.services.reranker import Reranker
 from app.services.vector_store import VectorStore
 from app.services.worldbank import build_worldbank_context, detect_indicators
+
+_CHART_BLOCK_RE = re.compile(
+    r"```chart\s*\n(\{.*?\})\s*\n```",
+    re.DOTALL,
+)
+
+
+def _extract_chart(text: str) -> Tuple[str, Optional[Dict]]:
+    """Strip a ```chart {...}``` JSON block from the LLM answer.
+
+    Returns (clean_answer, chart_dict_or_None).
+    """
+    m = _CHART_BLOCK_RE.search(text)
+    if not m:
+        return text, None
+    try:
+        chart_raw = json.loads(m.group(1))
+    except (json.JSONDecodeError, ValueError):
+        return text, None
+    clean = text[: m.start()].rstrip() + text[m.end() :].lstrip()
+    return clean.strip(), chart_raw
 
 
 class RagService:
@@ -28,11 +51,10 @@ class RagService:
 
         # 3. World Bank data (only for MARKET_RESEARCH)
         extra_context = ""
-        chart_data_raw: Optional[Dict] = None
         if mode == "MARKET_RESEARCH":
             indicator_keys = detect_indicators(question)
             if indicator_keys:
-                extra_context, chart_data_raw = build_worldbank_context(indicator_keys, question=question)
+                extra_context = build_worldbank_context(indicator_keys)
 
         # 4. LLM synthesis
         raw_answer, used_llm = self.llm.answer(
@@ -42,14 +64,10 @@ class RagService:
             extra_context=extra_context,
         )
 
-        # Strip [NO_CHART] flag — LLM signals no chart needed
-        if "[NO_CHART]" in raw_answer:
-            chart_data_raw = None
-            answer = raw_answer.replace("[NO_CHART]", "").rstrip()
-        else:
-            answer = raw_answer
+        # 5. Extract chart JSON block (if LLM decided to include one)
+        answer, chart_raw = _extract_chart(raw_answer)
 
-        # 5. Build citations from reranked results
+        # 6. Build citations from reranked results
         citations: List[Citation] = []
         for item, score in reranked:
             citations.append(
@@ -62,22 +80,25 @@ class RagService:
                 )
             )
 
-        # 6. Parse chart data if present
+        # 7. Build chart data from LLM JSON if present
         chart_data: Optional[ChartData] = None
-        if chart_data_raw:
-            chart_data = ChartData(
-                title=chart_data_raw["title"],
-                x_label=chart_data_raw["x_label"],
-                y_label=chart_data_raw["y_label"],
-                type=chart_data_raw.get("type", "line"),
-                series=[
-                    ChartSeries(
-                        name=s["name"],
-                        data_points=[DataPoint(**dp) for dp in s["data_points"]],
-                    )
-                    for s in chart_data_raw["series"]
-                ],
-            )
+        if chart_raw and "series" in chart_raw:
+            try:
+                chart_data = ChartData(
+                    title=chart_raw.get("title", "Chart"),
+                    x_label=chart_raw.get("x_label", "X"),
+                    y_label=chart_raw.get("y_label", "Y"),
+                    type=chart_raw.get("type", "line"),
+                    series=[
+                        ChartSeries(
+                            name=s["name"],
+                            data_points=[DataPoint(label=str(dp["label"]), value=float(dp["value"])) for dp in s["data_points"]],
+                        )
+                        for s in chart_raw["series"]
+                    ],
+                )
+            except (KeyError, TypeError, ValueError):
+                chart_data = None
 
         return AskResponse(
             answer=answer,
