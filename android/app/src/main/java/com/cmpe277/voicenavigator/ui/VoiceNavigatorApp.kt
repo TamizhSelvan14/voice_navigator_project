@@ -414,13 +414,28 @@ private fun ErrorCard(message: String) {
 // Result Section
 // ─────────────────────────────────────────────────────────────────────────────
 
+private fun stripMarkdown(text: String): String {
+    return text
+        .replace(Regex("#{1,6}\\s*"), "")          // ## headings
+        .replace(Regex("\\*\\*(.+?)\\*\\*"), "$1") // **bold**
+        .replace(Regex("\\*(.+?)\\*"), "$1")        // *italic*
+        .replace(Regex("`(.+?)`"), "$1")            // `code`
+        .replace(Regex("^[-*+]\\s+", RegexOption.MULTILINE), "") // bullet - / * / +
+        .replace(Regex("^\\d+\\.\\s+", RegexOption.MULTILINE), "") // numbered list
+        .replace(Regex("\\*\\*\\(.*?\\.pdf.*?\\)\\*\\*"), "") // **(source.pdf, p.X)**
+        .replace(Regex("\\(.*?\\.pdf.*?\\)"), "")  // (source.pdf, p.X) without bold
+        .replace(Regex("\\[.*?]\\(.*?\\)"), "")    // [link](url)
+        .replace(Regex("\\n{3,}"), "\n\n")          // collapse extra blank lines
+        .trim()
+}
+
 @Composable
 private fun ResultSection(response: AskResponse, onSpeak: (String) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
         AnswerCard(
             answer = response.answer,
             usedLlm = response.used_llm,
-            onSpeak = { onSpeak(response.answer) },
+            onSpeak = { onSpeak(stripMarkdown(response.answer)) },
         )
         response.chart_data?.let { ChartCard(it) }
         if (response.citations.isNotEmpty()) {

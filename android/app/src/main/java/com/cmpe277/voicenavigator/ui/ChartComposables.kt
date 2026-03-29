@@ -77,8 +77,10 @@ fun ChartCard(chartData: ChartDataDto) {
                     color = MaterialTheme.colorScheme.primaryContainer,
                 ) {
                     Icon(
-                        imageVector = if (chartData.type == "pie") Icons.Default.BarChart
-                                      else Icons.Default.ShowChart,
+                        imageVector = when (chartData.type) {
+                    "bar", "pie" -> Icons.Default.BarChart
+                    else         -> Icons.Default.ShowChart
+                },
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onPrimaryContainer,
                         modifier = Modifier
@@ -97,8 +99,9 @@ fun ChartCard(chartData: ChartDataDto) {
             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
 
             when (chartData.type) {
-                "pie" -> PieChart(chartData.series)
-                else  -> LineChart(chartData.series)
+                "pie"  -> PieChart(chartData.series)
+                "bar"  -> BarChart(chartData.series)
+                else   -> LineChart(chartData.series)
             }
 
             ChartLegend(chartData.series)
@@ -220,6 +223,94 @@ private fun LineChart(series: List<ChartSeriesDto>) {
             sorted.forEach { pt ->
                 drawCircle(Color.White, radius = 4.dp.toPx(), center = Offset(xOf(pt), yOf(pt)))
                 drawCircle(color,       radius = 3.dp.toPx(), center = Offset(xOf(pt), yOf(pt)))
+            }
+        }
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Bar chart
+// ─────────────────────────────────────────────────────────────────────────────
+
+@Composable
+private fun BarChart(series: List<ChartSeriesDto>) {
+    if (series.isEmpty()) return
+
+    val allLabels  = series.flatMap { it.data_points.map { p -> p.label } }.distinct().sorted()
+    val allValues  = series.flatMap { it.data_points.map { p -> p.value } }
+    if (allLabels.isEmpty() || allValues.isEmpty()) return
+
+    val minVal   = 0.0   // bars always start at zero
+    val maxVal   = allValues.max()
+    val valRange = if (maxVal < 0.001) 1.0 else maxVal
+    val labelCount = allLabels.size
+    val seriesCount = series.size
+
+    Canvas(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(240.dp)
+            .padding(start = 44.dp, end = 12.dp, top = 10.dp, bottom = 30.dp)
+    ) {
+        val w = size.width
+        val h = size.height
+
+        // Grid lines (5 divisions)
+        for (i in 0..4) {
+            val y = h - h * i / 4f
+            drawLine(
+                color       = Color(0xFFE2E8F0),
+                start       = Offset(0f, y),
+                end         = Offset(w, y),
+                strokeWidth = 1.dp.toPx(),
+            )
+            val v = valRange * i / 4
+            drawContext.canvas.nativeCanvas.drawText(
+                formatNumber(v),
+                -6.dp.toPx(),
+                y + 4.dp.toPx(),
+                android.graphics.Paint().apply {
+                    textSize  = 9.dp.toPx()
+                    color     = android.graphics.Color.parseColor("#94A3B8")
+                    textAlign = android.graphics.Paint.Align.RIGHT
+                }
+            )
+        }
+
+        // Bars
+        val groupWidth  = w / labelCount
+        val barPadding  = groupWidth * 0.1f
+        val totalBarW   = groupWidth - barPadding * 2
+        val singleBarW  = totalBarW / seriesCount
+
+        allLabels.forEachIndexed { gi, label ->
+            val groupLeft = groupWidth * gi + barPadding
+
+            series.forEachIndexed { si, s ->
+                val pt    = s.data_points.find { it.label == label } ?: return@forEachIndexed
+                val color = chartColors[si % chartColors.size]
+                val barH  = (h * (pt.value - minVal) / valRange).toFloat()
+                val left  = groupLeft + singleBarW * si
+                drawRect(
+                    color   = color,
+                    topLeft = Offset(left, h - barH),
+                    size    = Size(singleBarW - 2.dp.toPx(), barH),
+                )
+            }
+
+            // X-axis label (every nth to avoid overlap)
+            val xStep = maxOf(1, labelCount / 5)
+            if (gi % xStep == 0) {
+                drawContext.canvas.nativeCanvas.drawText(
+                    label,
+                    groupLeft + totalBarW / 2,
+                    h + 18.dp.toPx(),
+                    android.graphics.Paint().apply {
+                        textSize  = 9.dp.toPx()
+                        color     = android.graphics.Color.parseColor("#94A3B8")
+                        textAlign = android.graphics.Paint.Align.CENTER
+                    }
+                )
             }
         }
     }
