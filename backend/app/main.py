@@ -3,6 +3,7 @@ import json
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.config import settings
 from app.schemas import AskRequest, AskResponse, HealthResponse
@@ -16,6 +17,11 @@ app.add_middleware(
     allow_methods=['*'],
     allow_headers=['*'],
 )
+
+# Serve cropped evidence images
+assets_dir = settings.assets_dir
+assets_dir.mkdir(parents=True, exist_ok=True)
+app.mount('/assets', StaticFiles(directory=str(assets_dir)), name='assets')
 
 rag_service = RagService()
 
