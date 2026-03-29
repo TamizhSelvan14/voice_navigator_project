@@ -32,15 +32,22 @@ class RagService:
         if mode == "MARKET_RESEARCH":
             indicator_keys = detect_indicators(question)
             if indicator_keys:
-                extra_context, chart_data_raw = build_worldbank_context(indicator_keys)
+                extra_context, chart_data_raw = build_worldbank_context(indicator_keys, question=question)
 
         # 4. LLM synthesis
-        answer, used_llm = self.llm.answer(
+        raw_answer, used_llm = self.llm.answer(
             question=question,
             mode=mode,
             hits=reranked,
             extra_context=extra_context,
         )
+
+        # Strip [NO_CHART] flag — LLM signals no chart needed
+        if "[NO_CHART]" in raw_answer:
+            chart_data_raw = None
+            answer = raw_answer.replace("[NO_CHART]", "").rstrip()
+        else:
+            answer = raw_answer
 
         # 5. Build citations from reranked results
         citations: List[Citation] = []
