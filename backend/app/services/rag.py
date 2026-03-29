@@ -12,7 +12,7 @@ from app.services.vector_store import VectorStore
 from app.services.worldbank import build_worldbank_context, detect_indicators
 
 _CHART_BLOCK_RE = re.compile(
-    r"```chart\s*\n(\{.*?\})\s*\n```",
+    r"```chart\s*\n(\{.*?\})\s*```",
     re.DOTALL,
 )
 
@@ -49,12 +49,11 @@ class RagService:
         # 2. Rerank for precision
         reranked = self.reranker.rerank(query=question, hits=hits, top_k=settings.rerank_top_k)
 
-        # 3. World Bank data (only for MARKET_RESEARCH)
+        # 3. World Bank data — injected for any mode if indicators detected
         extra_context = ""
-        if mode == "MARKET_RESEARCH":
-            indicator_keys = detect_indicators(question)
-            if indicator_keys:
-                extra_context = build_worldbank_context(indicator_keys)
+        indicator_keys = detect_indicators(question)
+        if indicator_keys:
+            extra_context = build_worldbank_context(indicator_keys)
 
         # 4. LLM synthesis
         raw_answer, used_llm = self.llm.answer(

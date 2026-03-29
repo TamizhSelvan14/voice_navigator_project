@@ -189,7 +189,7 @@ INDICATORS: Dict[str, Dict[str, str]] = {
 _KEYWORD_MAP: List[Tuple[List[str], str]] = [
     (["gdp", "gross domestic product", "economic growth", "economy"], "gdp"),
     (["co2", "carbon", "emission", "greenhouse", "ghg"], "co2"),
-    (["agricultural land", "agriculture land", "farming land", "land use", "agri land", "cropland"], "agri_land"),
+    (["agricultural land", "agriculture land", "farming land", "land use", "agri land", "agriland", "cropland", "agri"], "agri_land"),
 ]
 
 

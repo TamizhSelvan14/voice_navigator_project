@@ -82,7 +82,11 @@ class LlmService:
             "- **Key point**: explanation **(source.pdf, p.X)**\n"
             "- **Key point**: explanation **(source.pdf, p.Y)**\n\n"
             "## Important Note\n"
-            "- short warning / rule / takeaway if relevant **(source.pdf, p.Z)**\n"
+            "- short warning / rule / takeaway if relevant **(source.pdf, p.Z)**\n\n"
+            "If a chart is appropriate (user asked for graph/chart OR data would benefit from visualization), append EXACTLY this block after everything else:\n"
+            "```chart\n"
+            "{\"title\": \"<chart title>\", \"type\": \"line\", \"x_label\": \"Year\", \"y_label\": \"<unit>\", \"series\": [{\"name\": \"<series name>\", \"data_points\": [{\"label\": \"2010\", \"value\": 3.2}]}]}\n"
+            "```\n"
         )
 
     def answer(
