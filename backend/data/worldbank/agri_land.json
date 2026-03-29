@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 1000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-02-24"
+  },
+  [
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2025",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2022",
+      "value": 36.8835927730766,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2021",
+      "value": 36.8380779923531,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2020",
+      "value": 36.7455822677967,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2019",
+      "value": 36.8075384238276,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2018",
+      "value": 36.7727494723685,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2017",
+      "value": 36.8945994209391,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2016",
+      "value": 36.6494624086384,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2015",
+      "value": 36.6949673290446,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2014",
+      "value": 36.8559290595867,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2013",
+      "value": 36.8589499899585,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2012",
+      "value": 36.9391927895466,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2011",
+      "value": 36.5889115906407,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2010",
+      "value": 36.4236766702568,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2009",
+      "value": 36.4182334516288,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2008",
+      "value": 36.4525805573715,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2007",
+      "value": 36.5554070062275,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2006",
+      "value": 36.6239439532657,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2005",
+      "value": 36.6189581360032,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2004",
+      "value": 36.5673205402573,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2003",
+      "value": 36.9369682556475,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2002",
+      "value": 37.1028696526341,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2001",
+      "value": 37.1733817095557,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2000",
+      "value": 37.1729374492351,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1999",
+      "value": 37.1547143904409,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1998",
+      "value": 37.1412964557378,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1997",
+      "value": 37.0312369639776,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1996",
+      "value": 36.9031441405977,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1995",
+      "value": 36.8484726651908,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1994",
+      "value": 36.8643568203194,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1993",
+      "value": 36.6976008277065,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1992",
+      "value": 36.7045617358596,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1991",
+      "value": 38.5555083028725,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1990",
+      "value": 38.5135453680459,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1989",
+      "value": 38.412878097901,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1988",
+      "value": 38.3204157580311,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1987",
+      "value": 38.1826301675809,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1986",
+      "value": 38.0275973265946,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1985",
+      "value": 38.0615193301458,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1984",
+      "value": 37.8082260973124,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1983",
+      "value": 37.5407082171489,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1982",
+      "value": 37.4644346180808,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1981",
+      "value": 37.3312433504175,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1980",
+      "value": 37.2711667300881,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1979",
+      "value": 37.1378315310971,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1978",
+      "value": 37.0503003827322,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1977",
+      "value": 36.8771354969942,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1976",
+      "value": 36.8255459276398,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1975",
+      "value": 36.8217628946864,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1974",
+      "value": 36.7155820349848,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1973",
+      "value": 36.5976908513101,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1972",
+      "value": 36.506712563374,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1971",
+      "value": 36.3808652818773,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1970",
+      "value": 36.238185903641,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1969",
+      "value": 36.2848918955948,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1968",
+      "value": 36.2411370822686,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1967",
+      "value": 35.916798479512,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1966",
+      "value": 35.8192772095122,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1965",
+      "value": 35.7360713315939,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1964",
+      "value": 35.6374675607936,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1963",
+      "value": 35.5547810486202,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1962",
+      "value": 35.4663400948866,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1961",
+      "value": 35.3948230088538,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "AG.LND.AGRI.ZS",
+        "value": "Agricultural land (% of land area)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    }
+  ]
+]

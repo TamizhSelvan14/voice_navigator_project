@@ -10,7 +10,7 @@ class VoiceNavigatorRepository {
             AskRequest(
                 question = question,
                 mode = mode,
-                top_k = 4,
+                top_k = null,
             )
         )
     }

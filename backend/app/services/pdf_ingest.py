@@ -20,7 +20,7 @@ class ChunkRecord:
 
 
 class PdfIngester:
-    def __init__(self, chunk_size: int = 900, overlap: int = 150):
+    def __init__(self, chunk_size: int = 1000, overlap: int = 200):
         self.chunk_size = chunk_size
         self.overlap = overlap
 
@@ -32,41 +32,72 @@ class PdfIngester:
 
     def clean_text(self, text: str) -> str:
         text = text.replace('\u00a0', ' ')
-        text = re.sub(r'\s+', ' ', text)
+        text = re.sub(r'[ \t]+', ' ', text)           # collapse horizontal whitespace
+        text = re.sub(r'\n{3,}', '\n\n', text)        # max 2 newlines
+        text = re.sub(r' *\n *', '\n', text)           # trim around newlines
         return text.strip()
+
+    def _find_sentence_boundary(self, text: str, pos: int) -> int:
+        """Find the nearest sentence boundary (. ! ? \\n) near pos."""
+        window = 80
+        search_start = max(pos - window, 0)
+        search_end = min(pos + window, len(text))
+        snippet = text[search_start:search_end]
+
+        # Look for sentence endings near the target position
+        best = -1
+        for m in re.finditer(r'[.!?]\s', snippet):
+            candidate = search_start + m.end()
+            if candidate <= pos + window:
+                best = candidate
+        if best > 0 and abs(best - pos) < window:
+            return best
+        return pos
 
     def chunk_text(self, text: str) -> Iterable[str]:
         if not text:
             return []
+
         start = 0
         chunks: List[str] = []
         while start < len(text):
             end = min(start + self.chunk_size, len(text))
+
+            # Try to break at a sentence boundary
+            if end < len(text):
+                end = self._find_sentence_boundary(text, end)
+
             chunk = text[start:end].strip()
             if chunk:
                 chunks.append(chunk)
             if end >= len(text):
                 break
-            start = max(end - self.overlap, 0)
+            start = max(end - self.overlap, start + 1)
         return chunks
 
     def ingest_pdf(self, pdf_path: Path) -> List[ChunkRecord]:
         records: List[ChunkRecord] = []
         domain = self.infer_domain(pdf_path)
         doc = fitz.open(pdf_path)
+
+        # Accumulate text across pages for better cross-page context
+        full_text_pages: List[tuple[int, str]] = []
         for page_index in range(len(doc)):
             page = doc[page_index]
             text = self.clean_text(page.get_text('text'))
-            if not text:
-                continue
-            section = text[:80].split('.')[:1][0].strip() or f'Page {page_index + 1}'
+            if text:
+                full_text_pages.append((page_index + 1, text))
+
+        # Chunk per page (preserves page-level citation accuracy)
+        for page_num, text in full_text_pages:
+            section = text[:100].split('.')[0].strip() or f'Page {page_num}'
             for chunk_num, chunk in enumerate(self.chunk_text(text)):
                 records.append(
                     ChunkRecord(
-                        chunk_id=f'{pdf_path.stem}-p{page_index + 1}-c{chunk_num}',
+                        chunk_id=f'{pdf_path.stem}-p{page_num}-c{chunk_num}',
                         domain=domain,
                         source=pdf_path.name,
-                        page=page_index + 1,
+                        page=page_num,
                         section=section,
                         text=chunk,
                     )

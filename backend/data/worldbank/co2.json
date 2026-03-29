@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 1000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-02-24"
+  },
+  [
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2025",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2024",
+      "value": 143.47393777722,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2023",
+      "value": 142.00671577711,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2022",
+      "value": 140.59882085538,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2021",
+      "value": 142.28027049582,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2020",
+      "value": 145.67817037596,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2019",
+      "value": 140.17623275078,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2018",
+      "value": 134.42276200344,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2017",
+      "value": 134.63867622378,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2016",
+      "value": 136.71626147647,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2015",
+      "value": 137.57572796433,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2014",
+      "value": 134.47194721084,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2013",
+      "value": 137.36562764584,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2012",
+      "value": 133.73971403003,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2011",
+      "value": 130.65426660736,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2010",
+      "value": 123.73625519892,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2009",
+      "value": 124.8715514528,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2008",
+      "value": 114.31117956159,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2007",
+      "value": 116.35058061298,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2006",
+      "value": 112.74371651708,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2005",
+      "value": 108.57124340471,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2004",
+      "value": 119.22198111098,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2003",
+      "value": 114.83148432566,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2002",
+      "value": 113.34434811294,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2001",
+      "value": 108.41556033103,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "2000",
+      "value": 107.02767802892,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1999",
+      "value": 108.2631841637,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1998",
+      "value": 104.6955872481,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1997",
+      "value": 103.02945091914,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1996",
+      "value": 103.31744537123,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1995",
+      "value": 97.937744804696,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1994",
+      "value": 91.277938583332,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1993",
+      "value": 88.184854689327,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1992",
+      "value": 90.025425861008,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1991",
+      "value": 90.345589485849,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1990",
+      "value": 92.408676527443,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1989",
+      "value": 94.877296792822,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1988",
+      "value": 96.232496986327,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1987",
+      "value": 92.028402526127,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1986",
+      "value": 91.117445677771,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1985",
+      "value": 87.91403658672,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1984",
+      "value": 86.805341762569,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1983",
+      "value": 83.300742185459,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1982",
+      "value": 78.949823673251,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1981",
+      "value": 77.657690557731,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1980",
+      "value": 76.950600312611,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1979",
+      "value": 73.343595976023,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1978",
+      "value": 67.31884409911,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1977",
+      "value": 62.953206505652,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1976",
+      "value": 58.498206988792,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1975",
+      "value": 55.325283455761,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1974",
+      "value": 50.684488687401,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1973",
+      "value": 50.083941052279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1972",
+      "value": 50.083941052279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1971",
+      "value": 50.083941052279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1970",
+      "value": 50.083941052279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1969",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1968",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1967",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1966",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1965",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1964",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1963",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1962",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1961",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "EN.GHG.CO2.AG.MT.CE.AR5",
+        "value": "Carbon dioxide (CO2) emissions from Agriculture (Mt CO2e)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "countryiso3code": "WLD",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    }
+  ]
+]
