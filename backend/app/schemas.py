@@ -17,8 +17,6 @@ class Citation(BaseModel):
     domain: str
     score: float
     preview: str
-    obj_type: str = "text"       # text | table | chart | image
-    image_url: Optional[str] = None  # URL to cropped evidence image
 
 
 class DataPoint(BaseModel):

@@ -45,10 +45,6 @@ class RagService:
         # 5. Build citations from reranked results
         citations: List[Citation] = []
         for item, score in reranked:
-            image_url = None
-            image_path = item.get("image_path")
-            if image_path:
-                image_url = f"/assets/{image_path}"
             citations.append(
                 Citation(
                     source=item["source"],
@@ -56,8 +52,6 @@ class RagService:
                     domain=item["domain"],
                     score=score,
                     preview=item["text"][:240],
-                    obj_type=item.get("obj_type", "text"),
-                    image_url=image_url,
                 )
             )
 

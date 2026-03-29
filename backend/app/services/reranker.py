@@ -12,7 +12,7 @@ RERANK_URL = "https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-reran
 class Reranker:
     def __init__(self) -> None:
         self.headers = {
-            "Authorization": f"Bearer {settings.next_api_key()}",
+            "Authorization": f"Bearer {settings.nvidia_api_key}",
             "Accept": "application/json",
         }
 
@@ -34,7 +34,6 @@ class Reranker:
         }
 
         with httpx.Client(timeout=30) as client:
-            self.headers["Authorization"] = f"Bearer {settings.next_api_key()}"
             resp = client.post(RERANK_URL, headers=self.headers, json=payload)
             resp.raise_for_status()
             body = resp.json()

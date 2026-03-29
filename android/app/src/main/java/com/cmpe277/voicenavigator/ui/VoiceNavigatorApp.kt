@@ -70,8 +70,6 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
-import coil.compose.AsyncImage
-import androidx.compose.ui.layout.ContentScale
 import com.cmpe277.voicenavigator.model.AskResponse
 import com.cmpe277.voicenavigator.model.CitationDto
 
@@ -755,38 +753,12 @@ private fun CitationItem(index: Int, citation: CitationDto) {
                 overflow = TextOverflow.Ellipsis,
             )
 
-            // Chips row: page + type badge
-            Row(
-                horizontalArrangement = Arrangement.spacedBy(6.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                MetaChip(
-                    label = "p. ${citation.page}",
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    textColor = MaterialTheme.colorScheme.onPrimaryContainer,
-                )
-                if (citation.obj_type != "text") {
-                    MetaChip(
-                        label = citation.obj_type.uppercase(),
-                        containerColor = MaterialTheme.colorScheme.tertiaryContainer,
-                        textColor = MaterialTheme.colorScheme.onTertiaryContainer,
-                    )
-                }
-            }
-
-            // Evidence image (for image/chart/table types)
-            if (!citation.image_url.isNullOrBlank()) {
-                val imageUrl = "http://10.0.2.2:8000${citation.image_url}"
-                AsyncImage(
-                    model = imageUrl,
-                    contentDescription = "Evidence from ${citation.source}",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(160.dp)
-                        .padding(top = 4.dp),
-                    contentScale = ContentScale.Fit,
-                )
-            }
+            // Chips row: page only
+            MetaChip(
+                label = "p. ${citation.page}",
+                containerColor = MaterialTheme.colorScheme.primaryContainer,
+                textColor = MaterialTheme.colorScheme.onPrimaryContainer,
+            )
 
             // Preview snippet
             Text(

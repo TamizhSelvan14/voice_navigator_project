@@ -12,8 +12,6 @@ data class CitationDto(
     val domain: String,
     val score: Double,
     val preview: String,
-    val obj_type: String = "text",
-    val image_url: String? = null,
 )
 
 data class DataPointDto(

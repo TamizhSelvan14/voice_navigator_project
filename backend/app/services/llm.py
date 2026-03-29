@@ -10,7 +10,7 @@ from app.config import settings
 class LlmService:
     def __init__(self) -> None:
         self.client = OpenAI(
-            api_key=settings.next_api_key(),
+            api_key=settings.nvidia_api_key,
             base_url=settings.nvidia_base_url,
         )
 
@@ -83,14 +83,13 @@ class LlmService:
             return "I could not find supporting text in the indexed documents for that question.", False
 
         prompt = self.build_prompt(question, mode, hits, extra_context)
-        self.client.api_key = settings.next_api_key()
         response = self.client.chat.completions.create(
-            model="moonshotai/kimi-k2-instruct-0905",
+            model=settings.llm_model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3,
             top_p=0.9,
-            max_tokens=4096,
-            # extra_body={"chat_template_kwargs":{"enable_thinking":False}},
+            max_tokens=1024,
+            extra_body={"chat_template_kwargs":{"enable_thinking":False}},
         )
         text = response.choices[0].message.content or ""
         return text.strip(), True
