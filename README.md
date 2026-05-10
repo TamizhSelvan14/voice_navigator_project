@@ -3,6 +3,13 @@
 This monorepo gives you a **working Android + FastAPI RAG starter** for the CMPE 277 hackathon.
 It is designed around the professor's brief and wireframes:
 
+<p align="center">
+  <video controls width="720" style="max-width:100%;">
+    <source src="demo/277_Hackathon_Video.mkv">
+    Your browser does not support the video tag. You can download the demo <a href="demo/277_Hackathon_Video.mkv">here</a>.
+  </video>
+</p>
+
 - **DMV mode** -> answers from the California Driver's Handbook PDF
 - **ESG mode** -> answers from the Food Security and Nutrition reports PDFs
 - **Voice-first Android UI** -> speech-to-text question input and text-to-speech answer playback
